@@ -13,7 +13,7 @@ qa_variables_centre_by_group.anova <- qa_variables %>%
   map(~Anova(mod = ., t = 3))
 
 qa_measure_with_main_effect_centre <- c("QA_GCOR_rest", "QA_InvalidScans", "QA_MaxGlobal")
-qa_measure_with_main_effect_group <- c("QA_WhiteMatter_eroded_vol", "QA_WhiteMatter_vol")
+qa_measure_with_main_effect_group <- c("QA_GCOR_rest", "QA_WhiteMatter_eroded_vol", "QA_WhiteMatter_vol")
 qa_measure_with_interaction <- c("QA_CSF_eroded_vol", "QA_CSF_vol", "QA_MaxMotion")
 
 barplot_main_effect_centre <- qa_variables %>%
